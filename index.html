@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Studio • AI & Indie Software Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="blob-ambient-1"></div>
+  <div class="blob-ambient-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="logo-orb">⚡</div>
+        <div>
+          <span class="brand-title">Nexus Studio</span>
+          <span class="brand-badge">2026 Fleet</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#projects" class="nav-link active">Projects</a>
+        <a href="#playground" class="nav-link">Live Playground</a>
+        <a href="#revenue" class="nav-link">Revenue Lab</a>
+        <a href="#monetization" class="nav-link">India Payouts</a>
+      </div>
+      <div class="nav-cta">
+        <span class="pulse-indicator"></span>
+        <span class="cta-status">Local Fleet Active</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <div class="hero-pill">
+        <span class="pill-dot"></span>
+        <span>Cross-Platform • Zero Plagiarism • Monetizable</span>
+      </div>
+      <h1 class="hero-headline">
+        Autonomous Software <br>
+        <span class="gradient-text">& Micro-SaaS Portfolio</span>
+      </h1>
+      <p class="hero-subtext">
+        Every project, tool, and agent skill built and curated during our session — re-engineered in pure Python and modern web standards with native Windows and macOS support.
+      </p>
+
+      <!-- Key Metrics Counter -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="metric-number">5+</span>
+          <span class="metric-label">Shipped Products</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number">100%</span>
+          <span class="metric-label">Cross-Platform (Win/Mac)</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number">$9</span>
+          <span class="metric-label">Pro License Price (-50%)</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number">INR / USD</span>
+          <span class="metric-label">Direct Bank Payouts</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter Navigation -->
+  <section class="section-container" id="projects">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Product Showcase</h2>
+        <p class="section-desc">Click any card to inspect architecture, source files, and live demos.</p>
+      </div>
+      <div class="filter-pills">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="desktop">Desktop Suite</button>
+        <button class="filter-btn" data-filter="extension">Chrome Extension</button>
+        <button class="filter-btn" data-filter="skills">Agent Skills</button>
+        <button class="filter-btn" data-filter="pc">PC Utilities</button>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+
+      <!-- Project 1: OmniClean Pro -->
+      <article class="project-card featured" data-category="desktop">
+        <div class="card-accent-bar"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="badge emerald">Python 3</span>
+            <span class="badge slate">Windows & macOS</span>
+            <span class="badge outline">Zero Plagiarism</span>
+          </div>
+          <h3 class="card-title">OmniClean Pro</h3>
+          <p class="card-desc">
+            Complete cross-platform performance suite rewritten from scratch in pure Python. Safely purges temporary junk, flushes DNS caches, optimizes process RAM working sets, and strips invasive GPS coordinates from photos.
+          </p>
+          <div class="card-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <span>1-Click OS & RAM Speedup</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🛡️</span>
+              <span>Photo EXIF & GPS Cloak</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🍏</span>
+              <span>Native macOS & Windows CLI/Web</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-tag">
+              <span class="original-price">$19</span>
+              <span class="current-price">$9</span>
+              <span class="discount-badge">-50%</span>
+            </div>
+            <div class="card-buttons">
+              <a href="http://127.0.0.1:58234" target="_blank" class="btn pill primary">Open App ↗</a>
+              <button class="btn pill secondary" onclick="openDemoModal('omniclean')">Simulate</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: ScreenShield -->
+      <article class="project-card" data-category="extension">
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="badge emerald">Manifest V3</span>
+            <span class="badge slate">Chrome / Edge / Arc</span>
+            <span class="badge outline">$1M+ Model</span>
+          </div>
+          <h3 class="card-title">ScreenShield</h3>
+          <p class="card-desc">
+            High-converting micro-SaaS privacy extension for content creators, streamers, and teachers. Point-and-click to blur sensitive emails, bank balances, or private DOM elements in 1 click before recording screens.
+          </p>
+          <div class="card-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎯</span>
+              <span>Instant Element & Regex Blurring</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">💾</span>
+              <span>Persistent Domain Cloak</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⌨️</span>
+              <span>Global Shortcut (Alt + B)</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-tag">
+              <span class="original-price">$19</span>
+              <span class="current-price">$9</span>
+              <span class="discount-badge">-50%</span>
+            </div>
+            <div class="card-buttons">
+              <button class="btn pill primary" onclick="scrollToPlayground()">Test Blur 🎯</button>
+              <button class="btn pill secondary" onclick="openDemoModal('screenshield')">Architecture</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Agent Supercharge Skills Bundle -->
+      <article class="project-card" data-category="skills">
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="badge emerald">Antigravity Core</span>
+            <span class="badge slate">Security & UI</span>
+            <span class="badge outline">Permanent</span>
+          </div>
+          <h3 class="card-title">Agent Supercharge Trio</h3>
+          <p class="card-desc">
+            Three professional agent skill modules integrated globally into the runtime to eradicate AI slop, audit code security, and generate visual explanations.
+          </p>
+          <div class="skill-tags-group">
+            <div class="skill-tag-pill">
+              <strong>bug-hunter</strong>
+              <span>681 vulnerability patterns & red-team audit</span>
+            </div>
+            <div class="skill-tag-pill">
+              <strong>anti-slop-ui</strong>
+              <span>Emil Kowalski + Vercel design engineering rules</span>
+            </div>
+            <div class="skill-tag-pill">
+              <strong>stick-scene</strong>
+              <span>Procedural visual diagram & animation engine</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="status-installed">✓ Installed Globally in ~/.gemini/config/skills</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: Handy Local Dictation -->
+      <article class="project-card" data-category="pc">
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="badge emerald">Open Source</span>
+            <span class="badge slate">39k+ Stars</span>
+            <span class="badge outline">100% Offline</span>
+          </div>
+          <h3 class="card-title">Handy • Local Dictation</h3>
+          <p class="card-desc">
+            Private, zero-latency speech-to-text utility for Windows. Hold down a global hotkey anywhere, speak, release, and an embedded local Whisper model types text instantly into your active window.
+          </p>
+          <div class="card-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🔒</span>
+              <span>100% On-Device Privacy (No Cloud)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <span>Embedded Whisper / Parakeet Models</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="badge outline">Free & Open-Source</span>
+            <button class="btn pill secondary" onclick="openDemoModal('handy')">View Setup Guide</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: Monetization & Indian Payout Engine -->
+      <article class="project-card featured" data-category="desktop">
+        <div class="card-accent-bar gold"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="badge gold">MoR Tax Compliance</span>
+            <span class="badge emerald">Direct Bank Transfer</span>
+            <span class="badge outline">Global Sales</span>
+          </div>
+          <h3 class="card-title">India Global Payout Architecture</h3>
+          <p class="card-desc">
+            The end-to-end payment stack tailored specifically for selling software from Indian bank accounts without Stripe restrictions.
+          </p>
+          <div class="payout-comparison">
+            <div class="payout-col">
+              <h4>Dodo Payments (Recommended)</h4>
+              <ul>
+                <li>✓ Built for Indian SaaS & digital founders</li>
+                <li>✓ Merchant of Record: handles global VAT & US sales tax</li>
+                <li>✓ Direct INR bank deposits via NEFT/IMPS</li>
+              </ul>
+            </div>
+            <div class="payout-col">
+              <h4>Razorpay International</h4>
+              <ul>
+                <li>✓ Native PAN & Aadhaar onboarding</li>
+                <li>✓ Accepts global cards & UPI</li>
+                <li>✓ Automated FIRC documentation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="tag-status">Configured & Bookmarked</span>
+            <a href="https://dodopayments.com" target="_blank" class="btn pill primary">Dodo Dashboard ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Live Interactive Playground Section -->
+  <section class="section-container" id="playground">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Interactive Playground</h2>
+        <p class="section-desc">Experience ScreenShield's live DOM masking right on this page.</p>
+      </div>
+      <div class="playground-controls">
+        <button class="btn pill primary" id="demoToggleBlur">Toggle ScreenShield [Alt + B]</button>
+        <button class="btn pill secondary" id="demoResetBlur">Reset Sandbox</button>
+      </div>
+    </div>
+
+    <!-- Mockup Sensitive Data Card -->
+    <div class="sandbox-canvas">
+      <div class="sandbox-banner">
+        <span class="sandbox-dot red"></span>
+        <span class="sandbox-dot yellow"></span>
+        <span class="sandbox-dot green"></span>
+        <span class="sandbox-url">https://stripe.dashboard/live/customers/acct_4920491</span>
+      </div>
+      <div class="sandbox-content">
+        <div class="mock-card">
+          <div class="mock-header">
+            <h4>Customer Profile (Click to Blur)</h4>
+            <span class="mock-badge">Confidential</span>
+          </div>
+          <div class="mock-grid">
+            <div class="mock-field blur-target">
+              <span class="field-label">Customer Name</span>
+              <span class="field-val">Alexander von Wright</span>
+            </div>
+            <div class="mock-field blur-target">
+              <span class="field-label">Email Address</span>
+              <span class="field-val">alex.wright@venture-scale.io</span>
+            </div>
+            <div class="mock-field blur-target">
+              <span class="field-label">Current Balance</span>
+              <span class="field-val text-emerald">$84,920.50 USD</span>
+            </div>
+            <div class="mock-field blur-target">
+              <span class="field-label">Card Number</span>
+              <span class="field-val font-mono">•••• •••• •••• 8842</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Revenue Calculator Section -->
+  <section class="section-container" id="revenue">
+    <div class="revenue-card">
+      <div class="revenue-header">
+        <div>
+          <span class="badge gold">Revenue Simulator</span>
+          <h2 class="revenue-title">Micro-SaaS Profit Calculator</h2>
+          <p class="revenue-desc">Estimate your monthly & annual earnings at $9/license with Indian bank conversion.</p>
+        </div>
+        <div class="revenue-pill">
+          <span class="rate-indicator">1 USD ≈ 85.50 INR</span>
+        </div>
+      </div>
+
+      <div class="calculator-body">
+        <div class="slider-group">
+          <div class="slider-header">
+            <span>Monthly License Customers</span>
+            <span class="slider-display" id="userCountDisplay">250 sales / mo</span>
+          </div>
+          <input type="range" id="salesSlider" min="20" max="2500" value="250" step="10" class="green-range">
+        </div>
+
+        <div class="earnings-grid">
+          <div class="earning-box">
+            <span class="earning-label">Monthly Revenue (USD)</span>
+            <span class="earning-val" id="monthlyUsdDisplay">$2,250</span>
+          </div>
+          <div class="earning-box highlight">
+            <span class="earning-label">Monthly Indian Bank Payout (INR)</span>
+            <span class="earning-val emerald" id="monthlyInrDisplay">₹192,375</span>
+          </div>
+          <div class="earning-box">
+            <span class="earning-label">Annual Projected Run Rate</span>
+            <span class="earning-val" id="annualRunRateDisplay">$27,000 / ₹2,308,500</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Modal Container -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Project Details</h3>
+        <button class="modal-close" id="modalCloseBtn">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>© 2026 Nexus Studio • Autonomous Agent & Indie Hacker Portfolio</p>
+      <div class="footer-links">
+        <a href="file:///C:/Users/HomePC/.gemini/antigravity/scratch/omniclean-suite">OmniClean Source</a>
+        <a href="file:///C:/Users/HomePC/.gemini/antigravity/scratch/blur-shield">ScreenShield Source</a>
+        <a href="file:///C:/Users/HomePC/.gemini/antigravity/scratch/pc-optimizations/Handy-Dictation.md">Handy Guide</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
